@@ -5,4 +5,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   base: '/TubisJemson.github.io/',
   plugins: [react()],
+  build: {
+    outDir: 'docs',
+  },
 })
