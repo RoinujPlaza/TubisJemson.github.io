@@ -22,9 +22,17 @@ The static output is generated in `dist/`.
 
 ## Deployment
 
-The `.github/workflows/deploy.yml` workflow builds and publishes the site to
-GitHub Pages on every push to `main`. Repository: `RoinujPlaza/TubisJemson.github.io`.
+The built static site lives in `docs/`. Repository:
+`RoinujPlaza/TubisJemson.github.io`.
+
+In the repo, go to **Settings → Pages → Build and deployment**, set:
+- Source: **Deploy from a branch**
+- Branch: **main** / **docs**
+
 Live URL: https://roinujplaza.github.io/TubisJemson.github.io/
+
+Rebuild after source changes with `npm run build`, then commit the `docs/`
+folder.
 
 ## Structure
 
